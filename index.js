@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/sms', function(req, res) {
   var twiml = new twilio.TwimlResponse();
-  twiml.message('wew lad');
+  twiml.message('🌷');
 
   writeToFile(req.body.Body);
 
